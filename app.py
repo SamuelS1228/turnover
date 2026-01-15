@@ -41,7 +41,7 @@ threshold_input = st.sidebar.number_input(
 
 st.sidebar.subheader("Radius")
 radius_mode = st.sidebar.radio("Radius scaling", options=["Linear", "Sqrt (recommended)"], index=1)
-radius_scale_m = st.sidebar.slider("Scale (meters)", min_value=100, max_value=20000, value=2000, step=100)
+radius_scale_m = st.sidebar.slider("Scale (meters)", min_value=0, max_value=20000, value=2000, step=100)
 min_radius = st.sidebar.slider("Min radius (m)", min_value=0, max_value=20000, value=200, step=50)
 max_radius = st.sidebar.slider("Max radius (m)", min_value=500, max_value=80000, value=8000, step=250)
 
